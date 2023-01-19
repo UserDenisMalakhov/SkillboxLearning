@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class Main2 {
+public class Main1_2 {
 
     private static String staffFile = "resources/data/staff.txt";
     private static String dateFormat = "dd/MM/yyyy";
