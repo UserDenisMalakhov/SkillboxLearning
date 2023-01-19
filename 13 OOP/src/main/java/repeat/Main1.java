@@ -6,16 +6,28 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main1 {
 
-    private static String staffFile = "data/staff.txt";
+    private static String staffFile = "resources/data/staff.txt";
     private static String dateFormat = "dd/MM/yyyy";
 
     public static void main(String[] args) {
         ArrayList<Employee1>staff = new ArrayList<>();
+//        Collections.sort(staff, new Comparator<Employee1>() {
+//            @Override
+//            public int compare(Employee1 o1, Employee1 o2) {
+//                return o1.getSalary().compareTo(o2.getSalary());
+//            }
+//        });
+        Collections.sort(staff, (o1, o2) -> o1.getSalary().compareTo(o2.getSalary()));
 
+        for (Employee1 employee1 : staff){
+            System.out.println(employee1);
+        }
     }
 
     private static ArrayList<Employee1> loadStaffFromFile(){
