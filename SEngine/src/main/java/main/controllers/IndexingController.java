@@ -2,14 +2,13 @@ package main.controllers;
 
 import main.models.responses.EmptyTrueResponse;
 import main.models.responses.ErrorResponse;
-import main.services.ConfigService;
+import main.config.ConfigService;
 import main.services.IndexingService;
 import main.services.SiteService;
 import main.services.StatisticsService;
 import main.utils.UrlRecursiveParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;

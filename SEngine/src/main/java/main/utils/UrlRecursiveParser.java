@@ -1,6 +1,6 @@
 package main.utils;
 
-import main.services.*;
+import main.config.ConfigService;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;

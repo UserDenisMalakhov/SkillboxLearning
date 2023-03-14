@@ -2,7 +2,7 @@ package main.controllers;
 
 import main.models.statistics.Statistics;
 import main.models.responses.StatisticsResponse;
-import main.services.ConfigService;
+import main.config.ConfigService;
 import main.services.StatisticsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

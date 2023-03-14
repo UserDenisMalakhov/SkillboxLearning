@@ -1,20 +1,15 @@
-package main.services;
+package main.config;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 
 @Component
 //@Configuration
-@ConfigurationProperties(prefix = "config")
+@ConfigurationProperties(prefix = "main/config")
 //@EnableConfigurationProperties
 public class ConfigService {
 
