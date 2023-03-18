@@ -9,7 +9,7 @@ import java.util.HashMap;
 
 @Component
 //@Configuration
-@ConfigurationProperties(prefix = "main/config")
+@ConfigurationProperties(prefix = "config")
 //@EnableConfigurationProperties
 public class ConfigService {
 
